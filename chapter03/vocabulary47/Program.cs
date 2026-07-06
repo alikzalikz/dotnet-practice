@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.Write("enter a number:");
+string? num=Console.ReadLine()!;
+if (int.TryParse(num,out int number))
+{
+    Console.WriteLine(number);
+}
+else
+{
+    Console.WriteLine("error! Try again");
+
+}
